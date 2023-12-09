@@ -1,0 +1,109 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+    max-width: 1200px;
+    margin: 5rem auto;
+}
+
+.form_section {
+    text-align: left;
+    padding: 4rem;
+    margin: 1rem auto;
+    max-width: 450px;
+    text-align: center;
+}
+
+.form_section h2 {
+    margin-bottom: 4rem;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.form {
+    margin-top: 1.3rem;
+}
+
+.form_text_field,
+.form_email_field {
+    width: 34rem;
+    padding: 1.5rem;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+    border: 1px solid var(--color-grey);
+}
+
+.form_section_password {
+    font-size: 1.4rem;
+    color: var(--color-light-pink);
+}
+
+
+.form_group p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.signup-link {
+    font-size: 1.4rem;
+}
+
+.form_button {
+    font-size: 1.8rem;
+    background: var(--color-light-pink);
+    color: var(--color-white);
+    margin-top: 2rem;
+    border: none;
+    padding: 1rem 15rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.form_button:hover {
+    background: var(--color-pink);
+    transition: all 0.4s ease;
+    transform: scale(1.1);
+}
+
+.signin_image {
+    max-width: 45rem;
+    height: auto; /* Permite a altura se ajustar automaticamente para manter as proporções */
+    display: block;
+    border-radius: 1rem;
+  }
+
+
+@media only screen and (max-width: 1024px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Altera para uma única coluna */
+    }
+
+    .form_section {
+      order: 1; /* Coloca o formulário em primeiro lugar */
+    }
+
+    .image_section {
+      order: 2; /* Coloca a imagem depois do formulário */
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Altera para uma única coluna */
+    }
+
+    /* Ajuste na ordem dos elementos */
+    .image_section,
+    .form_section {
+      order: initial; /* Definir a ordem inicial */
+    }
+
+    /* Centralizar a imagem quando está em uma única coluna */
+    .image_section {
+      text-align: center;
+    }
+  }

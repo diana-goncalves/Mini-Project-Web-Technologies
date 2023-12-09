@@ -1,0 +1,126 @@
+.hero {
+  padding: 12rem 8rem;
+}
+
+.hero_headline {
+  font-size: 6.4rem;
+  font-weight: 800;
+  max-width: 60.6rem;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.hero_description {
+  color: var(--color-grey);
+  font-size: 2.4rem;
+  line-height: 160%;
+  max-width: 60.6rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero_image_home {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4rem;
+  margin-bottom: 4.6rem;
+  width: 1500px;
+  height: auto;
+}
+
+
+.hero_grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+padding: 12rem 8rem;
+}
+
+.hero_image_recipe {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  object-fit: cover; /* Mantém a proporção e corta a imagem para preencher o quadrado */
+  object-position: center; /* Centraliza a imagem */
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero_recipe {
+display: flex;
+flex-direction: column;
+}
+
+.hero_recipe_headline {
+color: var(--color-light-pink);
+}
+
+.hero_recipe_name {
+  font-size: 1.6rem;
+  color: var(--color-dark-grey);
+}
+
+.hero_recipe_time {
+font-size: 1.3rem;
+}
+
+.hero_recipe_description {
+font-size: 1.6rem;
+text-align: justify;
+max-width: 40rem;
+}
+
+.hero_recipe_button {
+display: block;
+text-align: left;
+font-size: 1.6rem;
+color: var(--color-dark-grey);
+text-decoration: underline;
+}
+
+
+/* Rodapé */
+
+.site_footer {
+  background-color: var(--color-light-grey);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer_content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer_nav {
+  margin-top: 1rem;
+}
+
+.footer_nav a {
+  text-decoration: none;
+  color: var(--color-dark-grey);
+  margin: 0 1rem;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero_image_home {
+    width: 800px; /* Diminui o tamanho da imagem para tablet */
+  }
+
+  .hero_grid {
+    grid-template-columns: repeat(2, 1fr); /* Altera a grid para 2 colunas */
+  }
+}
+
+/* Telemóvel */
+@media (max-width: 768px) {
+  .hero_image_home {
+    width: 400px; /* Diminui ainda mais o tamanho da imagem para telemóvel */
+  }
+
+  .hero_grid {
+    grid-template-columns: repeat(1, 1fr); /* Altera a grid para 1 coluna */
+  }
+}

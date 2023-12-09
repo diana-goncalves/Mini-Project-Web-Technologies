@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("./shared/reset.css");
+@import url("./shared/variables.css");
+@import url("./shared/base.css");
+
+@import url("./components/navigation.css");
+
+@import url("./pages/homepage.css");
+
+@import url("./categories.css");

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Categories</title>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/contact.css">
+</head>
+<body>
+  <nav class="navigation">
+    <div class="navigation_wrapper">
+      <a href="./index.html">
+        <img src="./assets/logo.png" alt="SaaSup logo" class="navigation_logo"/>
+      </a>
+      <div class="navigation_links_wrapper">
+        <div class="navigation_links">
+          <a href="./index.html" class="navigation_link">Home</a>
+          <a href="./categories.html" class="navigation_link">Food Categories</a>
+          <a href="./about.html" class="navigation_link">About us</a>
+          <a href="./contact.html" class="navigation_link">Contact</a>
+        </div>
+
+        <a href="./signin.html" class="navigation_button">Sign in</a>
+      </div>
+    </div>
+  </nav>
+
+    <section class="grid-container">
+      <div class="form_section">
+        <h2>Contact us</h2>
+        <p>We value any comments or feedback so if you would like to get in touch with us we would love to hear from you.</p>
+
+        <form action="/submit.php" method="post" class="form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" class="form_text_field">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="form_email_field">
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="8" cols="50" class="form_message_field"></textarea>
+
+          <input type="submit" value="Submit" class="form_button">
+        </form>
+      </div>
+
+      <div class="image_section">
+        <img src="./assets/contact.avif" alt="image" class="contact_image">
+    </div>
+
+    </section>
+
+  <footer class="site_footer">
+    <div class="footer_content">
+      <p>© 2023 FoodRecipes.com</p>
+      <nav class="footer_nav">
+        <a href="./about.html">About us</a>
+        <a href="./categories.html">Recipes</a>
+        <a href="./contact.html">Contact us</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

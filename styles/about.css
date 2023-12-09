@@ -1,0 +1,88 @@
+.about {
+    padding: 2.5rem 8rem;
+}
+
+.about_headline {
+    font-size: 2.4rem;
+    max-width: 60.6rem;
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+
+.about_description {
+    color: var(--color-grey);
+    line-height: 160%;
+    max-width: 150rem;
+    margin: 2rem auto;
+    text-align: justify;
+}
+
+.about_contact {
+    color: var(--color-grey);
+    line-height: 160%;
+    max-width: 150rem;
+    margin: 4rem auto;
+    text-align: justify;
+}
+
+.hero_image_about {
+    display: block;
+    margin: 0 auto; /* Define margens automáticas para centralizar */
+    border-radius: 4rem;
+    margin-bottom: 4.6rem;
+    width: 1500px; /* largura desejada */
+    height: auto; /* altura automática proporcional */
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .hero_image_about {
+      width: 700px; /* Diminui a largura da imagem para tablet */
+    }
+
+    .about_description,
+    .about_contact {
+      max-width: 70rem; /* Reduz a largura do parágrafo para tablet */
+    }
+}
+
+  /* Telemóvel */
+@media (max-width: 768px) {
+    .hero_image_about {
+      width: 400px; /* Diminui ainda mais a largura da imagem para telemóvel */
+    }
+
+    .about_description,
+    .about_contact {
+      max-width: 20rem; /* Reduz ainda mais a largura do parágrafo para telemóvel */
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .hero_image_about {
+      width: 700px; /* Diminui a largura da imagem para tablet */
+    }
+
+    .about_description,
+    .about_contact {
+      max-width: 70rem; /* Reduz a largura do parágrafo para tablet */
+    }
+}
+
+/* Telemóvel */
+@media (max-width: 768px) {
+    .hero_image_about {
+      width: 400px; /* Diminui ainda mais a largura da imagem para telemóvel */
+    }
+
+    .about_description,
+    .about_contact {
+      max-width: 40rem; /* Reduz ainda mais a largura do parágrafo para telemóvel */
+      font-size: 1.2rem; /* Diminui o tamanho da fonte do parágrafo */
+    }
+
+    .about_headline {
+      font-size: 2rem; /* Diminui o tamanho da fonte do título */
+    }
+}
